@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML: Textarea Element</title>
+</head>
+<body>
+  <h1>HTML Textarea Element Demo</h1>
+  
+  <h2 style="margin-top: 50px;">Example 1</h2>
+  <p style="font-size:16pt;">&lt;textarea&gt;&lt;&#47;textarea&gt;</p>
+  <textarea></textarea>
+  <p>This is the default behavior of the text area.
+    <br>
+    It allows for users to change the size of the textarea input, and is whitespace sensitive for user input.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 2</h2>
+  <p style="font-size:16pt;">&lt;textarea <b>autocomplete autofocus cols=60 rows=10</b>&gt;<b>Hello</b>&lt;&#47;textarea&gt;</p>
+  <textarea autocomplete autofocus cols=60 rows=10>Hello</textarea>
+  <p>Here I've started to change the look and functionality of the textarea a little bit.
+     <br>
+     You'll notice that as you loaded this page, this box was automatically highlighted, that is thanks to the <b>autofocus</b>
+     attribute I've set as true.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 3</h2>
+  <p style="font-size:16pt;">&lt;textarea <b>disabled</b>&gt;Hello&lt;&#47;textarea&gt;</p>
+  <textarea disabled>Hello</textarea>
+  <p>Although the textarea is disabled, you're still able to prefill in text within the textarea tags.</p>
+
+  <h2 style="margin-top: 50px;">Example 4</h2>
+  <p style="font-size:16pt;">&lt;textarea <b>readonly placeholder="Hello"</b>&gt;&lt;&#47;textarea&gt;</p>
+  <textarea readonly placeholder="Hello"></textarea>
+  <p>This textarea is readonly, though there is no visual way for one to tell the 
+    box is not editable until it is clicked on.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 5</h2>
+  <pre style="font-family:serif;font-size:16pt;">
+  &lt;textarea <b>dirname="name.dir" form="textareaForm" minlength=5 maxlength=30 name="name" required wrap="soft"</b>&gt;&lt;&#47;textarea&gt;
+  &lt;form id="textareaForm"&gt;
+      &lt;input type="submit"&gt;
+  &lt;&#47;form&gt;
+  </pre>
+  <textarea dirname="name.dir" form="textareaForm" minlength=5 maxlength=30 name="name" required wrap="soft"></textarea>
+  <form id="textareaForm">
+    <input type="submit">
+  </form>
+  <p>This monstrous element requires that you put at minimum 5 and maximum 30 characters, and will not preserve linebreaks based on 
+     the textbox width. 
+     <br>
+     (User inputted line breaks will be preserved)</p>
+
+</body>
+</html>

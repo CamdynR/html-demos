@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML: Link Element</title>
+</head>
+<body>
+  <h1>HTML Link Element Demo</h1>
+  
+  <h2 style="margin-top: 50px;">Example 1 - rel/type/href</h2>
+  <p style="font-size:16pt;">&lt;link rel="stylesheet" type="text/css" href="styles/main.css"&gt;</p>
+  <p>The link element must contain both the <b>rel</b> and <b>href</b> attributes in order to be a valid element.</p>
+
+  <h2 style="margin-top: 50px;">Example 2 - crossorigin</h2>
+  <p style="font-size:16pt;">&lt;link href="https://somewebsite.com/song.mp3" <b>crossorigin="use-credentials"</b>&gt;</p>
+  <p>In example 2 here, <a href="#">somewebsite.com</a> has a CORS policy in place on song.mp3. 
+    <br>
+    Since my browser has permission to access this file via a cookie, I can specify "use-credentials" so my browser knows to send the cookie when making the file request.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 3 - rev</h2>
+  <p style="font-size:16pt;">&lt;link rel="stylesheet" <b>rev="author"</b> type="text/css" href="styles/main.css"&gt;</p>
+  <p>In example 3 here, I am specifying that I am the author of the linked CSS file.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 4 - media</h2>
+  <p style="font-size:16pt;">&lt;link rel="stylesheet" type="text/css" <b>media="print"</b> href="styles/main.css"&gt;</p>
+  <p>In example 4 here, this CSS sheet only applies to printers so the page can look nice when printed.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 5 - nonce</h2>
+  <p style="font-size:16pt;">&lt;link rel="script" <b>nonce="abcde12345"</b> href="styles/main.css"&gt;</p>
+  <p>In example 5 here, the file can only be linked if it has the matching nonce attribute value.</p>
+
+  <h2 style="margin-top: 50px;">Example 6 - hreflang</h2>
+  <p style="font-size:16pt;">&lt;link rel="alternate" <b>hreflang="es"</b> href="https://es.mysite.com"&gt;</p>
+  <p>Here I link to an alternate version of my website that has been translate to Spanish, this would help with
+    SEO in spanish speaking countries.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 7 - referrerpolicy</h2>
+  <p style="font-size:16pt;">&lt;link rel="stylesheet" <b>referrerpolicy="origin"</b> href="https://othersite.com/style.css"&gt;</p>
+  <p>In my example above, no matter which page of my website the request is made, they will only see that the request is 
+     <br>
+     coming from my base origin.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 8 - sizes</h2>
+  <p style="font-size:16pt;">&lt;link rel="icon" <b>sizes="16x16"</b> type="image/x-icon" href="icon/favicon.ico"&gt;</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML: Base Element</title>
+</head>
+
+<body>
+  <h1>HTML Base Element Demo</h1>
+  
+  <h2 style="margin-top: 50px;">Example 1</h2>
+  <p style="font-size:16pt;">&lt;base href="https://mywebsite.com/"&gt;</p>
+  <p>In this example, since the href attribute is set, any link on this document will open with <a href="#">https://mywebsite.com/</a> as the base of that URL.
+  <br>
+  <b>NOTE:</b> Notice how there is no closing tag. This element does not take any content (outside of its attributes) so a closing tag is excluded.
+  </p>
+
+  <h2 style="margin-top: 50px;">Example 2</h2>
+  <p style="font-size:16pt;">&lt;base target="_blank"&gt;</p>
+  <p>This example shows that the base element doesn't necessarily require the href attribute, you can use just
+    the target attribute if you so choose. 
+    <br>
+    This example will open any link in the document in a new tab.
+    <br>
+    <b>NOTE:</b> The base element requires AT LEAST one of these two attributes, target or href. You must use
+    at least one.
+  </p>
+
+  
+  <h2 style="margin-top: 50px;">Example 3</h2>
+  <p style="font-size:16pt;">&lt;base href="https://mywebsite.com/" target="_blank"&gt;</p>
+  <p>And naturally, you can use both attributes together if you so choose. 
+    <br>
+    This will have the combined effect of setting <a href="#">https://mywebsite.com/</a> as the base URL for any link or document in this document, as well as opening that URL in a new browser tab. 
+  </p>
+</body>
+</html>
